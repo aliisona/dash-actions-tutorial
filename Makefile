@@ -22,12 +22,12 @@ run_app:
 	
 	REPO_PATH=dash-gh-actions
 
-	find pages_files -type f -exec sed -i.bak "s|_dash-component-suites|${REPO_PATH}\\//_dash-component-suites|g" {} \;
+	find pages_files -type f -exec sed -i.bak "s|_dash-component-suites|${REPO_PATH}\\/_dash-component-suites|g" {} \;
 	find pages_files -type f -exec sed -i.bak "s|_dash-layout|${REPO_PATH}/_dash-layout.json|g" {} \;
 	find pages_files -type f -exec sed -i.bak "s|_dash-dependencies|${REPO_PATH}/_dash-dependencies.json|g" {} \;
 	find pages_files -type f -exec sed -i.bak "s|_reload-hash|${REPO_PATH}/_reload-hash|g" {} \;
 	find pages_files -type f -exec sed -i.bak "s|_dash-update-component|${REPO_PATH}/_dash-update-component|g" {} \;
-	find pages_files -type f -exec sed -i.bak "s|assets|${REPO_PATH}/dashboard/assets|g" {} \;
+	find pages_files -type f -exec sed -i.bak "s|assets|${REPO_PATH}/assets|g" {} \;
 
 
 	# find pages_files -exec sed -i.bak 's|_dash-component-suites|dash-actions-tutorial\\/_dash-component-suites|g' {} \;
